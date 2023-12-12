@@ -108,3 +108,52 @@ button:hover span {
 button:hover {
     border: none;
 }
+
+#reg{
+    margin-top: -10px;
+    font-size: small;
+    color: gray;
+}
+
+#reg a:hover {
+    color: red;
+}
+
+footer {
+    background-color: #ad0d0d; /* Choose a color that fits your website's design */
+    color: #fff;
+    padding: 12px;
+    text-align: center;
+    height: 18px;
+    position: absolute;
+    top: 100%;
+    left: 25%;
+}
+
+.contact-details {
+    font-size: 12px;
+    display: flex;
+    margin-left: 15px;
+}
+
+.contact-details p {
+    margin-left: 15px;
+}
+
+.contact-details img {
+    width: 20px;
+    display: inline;
+    margin-left: 10px;
+}
+
+.contact-details img:hover{
+    width: 25px;
+    height: 25px;
+}
+
+#email {
+    display: inline;
+    margin-left: -15px;
+    
+}
+
