@@ -12,6 +12,14 @@
     background-position: center;
 }
 
+/* Example media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .banner {
+        width: 100%; /* Adjust for smaller screens */
+    }
+}
+
+
 .navbar {
     width: 85%;
     margin: auto;
@@ -43,7 +51,7 @@
     content: '';
     height: 3px;
     width: 0%;
-    background: #009688;
+    background: #e69f35d0;
     position: absolute;
     left: 0%;
     bottom: -10px;
@@ -89,12 +97,12 @@ button {
     overflow: hidden;
 }
 
-span{
+button span {
     background: #ff9900be;
     height: 100%;
     width: 0;
     border-radius: 25px;
-    position: absolute;
+    position: absolute; 
     left: 0;
     bottom: 0;
     z-index: -1;
@@ -117,43 +125,5 @@ button:hover {
 
 #reg a:hover {
     color: red;
-}
-
-footer {
-    background-color: #ad0d0d; /* Choose a color that fits your website's design */
-    color: #fff;
-    padding: 12px;
-    text-align: center;
-    height: 18px;
-    position: absolute;
-    top: 100%;
-    left: 25%;
-}
-
-.contact-details {
-    font-size: 12px;
-    display: flex;
-    margin-left: 15px;
-}
-
-.contact-details p {
-    margin-left: 15px;
-}
-
-.contact-details img {
-    width: 20px;
-    display: inline;
-    margin-left: 10px;
-}
-
-.contact-details img:hover{
-    width: 25px;
-    height: 25px;
-}
-
-#email {
-    display: inline;
-    margin-left: -15px;
-    
 }
 
