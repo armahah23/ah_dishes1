@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+
+.register {
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(bckgrnd.jpeg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register h1 {
+    color: #ff7300;
+    font-size: 80px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.register form {
+    width: 50%;
+    background: #ffffff86;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.inputBox {
+    position: relative;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.inputBox input {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    color: #fff;
+    letter-spacing: 1px;
+    border: none;
+    border-bottom: 2px solid #ff7300;
+    outline: none;
+    background: transparent;
+}
+
+.inputBox label {
+    margin: 2px;
+    padding: 2px;
+    padding-top: 2px;
+    color: #000000;
+}
+
+input[type="submit"] {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #ff7300;
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background: #ff5100;
+}
+
+.inputBox button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0.5rem 0.8rem;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.inputBox button:hover {
+    background: #ff5100;
+}
+
+
+
+
+
+
+
+
+
+

@@ -32,17 +32,6 @@
     justify-content: space-between;
 }
 
-.navbar ::after{
-    content: '';
-    display: table;
-    clear: both;
-}
-
-.logo {
-    width: 120px;
-    cursor: pointer;
-}
-
 .navbar ul li {
     list-style: none;
     display: inline-block;
@@ -54,6 +43,12 @@
     text-decoration: none;
     color: #fff;
     text-transform: uppercase;
+    position: relative;
+}
+
+.logo {
+    width: 140px;
+    cursor: pointer;
 }
 
 .navbar ul li ::after {
@@ -62,7 +57,7 @@
     width: 0;
     background: #e69f35d0;
     position: absolute;
-    left: 0%;
+    left: 0;
     bottom: -10px;
     transition: 0.5s;
 }
