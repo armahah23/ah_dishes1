@@ -53,7 +53,7 @@
 .navbar ul li ::after {
     content: '';
     height: 3px;
-    width: 0%;
+    width: 0;
     background: #e69f35d0;
     position: absolute;
     left: 0%;
@@ -101,6 +101,7 @@
     margin-left: 10px;
     display: grid;
     position: relative;
+    left: 20px;
     grid-template-rows: auto 1fr;
     border-radius: 15px;
     box-shadow: 0 0 10px rgb(255, 255, 255);
@@ -163,83 +164,5 @@
     width: 185px;
     height: 110%;
 }
-/*
-.hot {
-    width: 2px;
-    height: 2px;
-    position: absolute;
-    left: 75px;
 
-}*/
 
-/*Footer css*/
-footer {
-    background: #111;
-    height: auto;
-    width: 100%;
-    font-family: 'Times New Roman', Times, serif;
-    position: absolute;
-    top: 75%;
-    padding-top: 40px;
-    color: #fff;
-}
-
-.footer-content {
-    align-items: center;
-    font-weight: 400;
-    text-transform: capitalize;
-    line-height: 3rem;
-}
-
-.footer-content h3 {
-    text-align: center;
-    justify-content: center;
-}
-
-.footer-content p {
-    max-width: auto;
-    margin: auto;
-    line-height: 28px;
-    font-size: 14px;
-    text-align: center;
-}
-
-.socials {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 1rem 0 3rem 0;
-}
-
-.socials li {
-    margin: 0 10px;
-}
-
-.socials a i {
-    font-size: 1.1rem;
-    transition: color 0.4s ease;
-}
-
-.socials a:hover i {
-    color: aqua;
-}
-
-.footer-bottom {
-    background: #000 ;
-    width: 100%;
-    padding: 20px 0;
-    text-align: center;
-    position: relative;
-}
-
-.footer-bottom p {
-    text-transform: uppercase;
-    opacity: 0.4;
-    font-weight: 180;
-}
-
-.footer-bottom p span {
-    color: gray;
-    text-transform: lowercase;
-}
