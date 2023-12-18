@@ -120,6 +120,11 @@ button:hover {
     border: none;
 }
 
+button a {
+    text-decoration: none;
+    color: #fff;
+}
+
 .reg p a {
     color: #ffae00;
     text-decoration: none;
