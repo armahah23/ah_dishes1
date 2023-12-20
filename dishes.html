@@ -16,6 +16,10 @@
                     <li><a href="offers.html">Offers</a></li>
                     <li><a href="about_us.html">About Us</a></li>
                 </ul>
+                <div class="box">
+                <div class="cart-count">0</div>
+                <ion-icon name="cart"></ion-icon>
+                </div>
             </div>
             </header>
             <div class="menu">
@@ -295,120 +299,6 @@
 
         <!-- Add to card, for the script -->
 
-         
-<script> 
- 
-    document.addEventListener("DOMContentLoaded", function () { 
-   
-    // Get all elements with class 'btn' (Add to Cart buttons) 
-   
-    var addToCartButtons = document.querySelectorAll('.btn'); 
-   
-    // Initialize total price 
-   
-    var totalPrice = 0; 
-   
-    // Function to update total price 
-   
-    function updateTotalPrice() { 
-   
-    document.getElementById('price').innerText = 'Total--------------------- Rs.' + totalPrice; 
-   
-   }
-   
-    // Attach click event listener to each button 
-   
-    addToCartButtons.forEach(function (button) { 
-   
-    button.addEventListener('click', function () { 
-   
-    // Get the parent container of the clicked button (single-menu) 
-   
-    var menuContainer = this.closest('.single-menu'); 
-   
-    // Extract information from the menu item 
-   
-    var itemName = menuContainer.querySelector('h4').innerText; 
-   
-    var itemPrice = parseFloat(menuContainer.querySelector('h5').innerText.replace('Rs.', '')); 
-   
-    // Add the item price to the total 
-   
-    totalPrice += itemPrice; 
-   
-  
-  
-  
-  
-  
-  
-  // Create a new list item for the cart
-   
-   var cartItem = document.createElement('li'); 
-   
-   cartItem.classList.add('cart-item'); // Add a class for styling 
-   
-  // Create a grid container for name and price
-   
-   var gridContainer = document.createElement('div'); 
-   
-   gridContainer.classList.add('cart-item-grid'); 
-   
-  // Create elements for name and price
-   
-   var itemNameElement = document.createElement('span'); 
-   
-   itemNameElement.innerText = itemName; 
-   
-   var itemPriceElement = document.createElement('span'); 
-   
-   itemPriceElement.innerText = `Rs.${itemPrice.toFixed(2)}`; 
-   
-  // Append elements to the grid container
-   
-   gridContainer.appendChild(itemNameElement); 
-   
-   gridContainer.appendChild(itemPriceElement); 
-   
-  // Append the grid container to the cart item
-   
-   cartItem.appendChild(gridContainer); 
-   
-  // Append the cart item to the cart list
-   
-   document.getElementById('cart-items').appendChild(cartItem); 
-   
-  
-  
-  
-  
-  
-  
-  
-    // Append the cart item to the cart list 
-   
-    document.getElementById('cart-items').appendChild(cartItem); 
-   
-    // Update the total price display 
-   
-    updateTotalPrice(); 
-   
-   });
-   
-   });
-   
-    // Function to handle checkout 
-   
-    window.checkout = function () { 
-   
-    // You can implement the checkout logic here 
-   
-    alert('Checkout functionality to be implemented. Total amount: Rs.' + totalPrice.toFixed(2)); 
-   
-   };
-   
-   });
-   
-</script> 
+        <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>         
 </body>
 </html>
