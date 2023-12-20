@@ -75,8 +75,8 @@
 
 .cart-count {
     position: absolute;
-    top: 65px;
-    right: 105px;
+    top: 50px;
+    right: 45px;
     background-color: blue;
     padding: 3px;
     height: 20px;
@@ -86,11 +86,137 @@
     z-index: 99;
 }
 
-.cart {
-    font-size: 1.5rem;
+#cart-icon {
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
     cursor: pointer;
     padding: 10px;
+    color: #fff;
+    position: absolute;
+    top: 30px;
+    right: 60px;
+}
 
+.cart {
+    position: fixed;
+    top: 110px;
+    right: -100%;
+    width: 400px;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.877);
+    box-shadow: 0 1px 4px rgba(40, 37, 37, 0.1);
+    z-index: 100;
+}
+
+.cart-active {
+    right: 0;
+    transition: 0.5s;
+}
+
+.cart-title {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.cart-box {
+    display: grid;
+    grid-template-columns: 32% 50% 18%;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding-bottom: 10px;
+}
+
+.cart-img {
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+    border: 2px solid rgba(0,0,0,0.4);
+    padding: 5px;
+}
+
+.detail-box {
+    display: grid;
+    row-gap: 0.5rem;
+}
+
+.price-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-food-title {
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: rgb(252, 95, 4);
+    font-weight: 500;
+}
+
+.cart-price {
+    font-weight: 500;
+}
+
+.cart-quantity {
+    border: 1px solid rgba(0,0,0,0.2);
+    outline: none;
+    width: 2.4rem;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.cart-remove {
+    font-size: 24px;
+    color: red;
+    cursor: pointer;
+}
+
+.cart-total {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+}
+
+.total-title {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.total-price {
+    margin-left: 0.5rem;
+}
+
+.checkout {
+    padding: 12px 20px;
+    background-color: rgb(252, 95, 4);
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.checkout:hover {
+    background-color: rgb(255, 0, 0);
+    transform: scale(1.05);
+}
+
+#cart-close {
+    position: absolute;
+    top: 1rem;
+    right: 0.8rem;
+    font-size: 2rem;
+    cursor: pointer;
 }
 
 
