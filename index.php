@@ -19,7 +19,7 @@
             <img src="logoF.png" class="logo">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="offers.html">Offers</a></li>
+                <li><a href="#">Offers</a></li>
                 <li><a href="about_us.html">About Us</a></li>
                 
             </ul>
@@ -31,7 +31,7 @@
             <p> Come for the food, stay for the memories – AH Dishes,
                 where every meal is a celebration of family and flavor.</p>
             <div class="reg">
-                <button type="button"><span></span>Visit Inside</button>
+                <button type="button"><span></span><a href="visit.html"> Inside </a></button>
                 <button type="button"><span></span><a href="http://localhost/ah-dishes/sign_in.php"> Log in </a></button>
                 <p> If you aren't not a member? <a href="http://localhost/ah-dishes/sign_up.php">Register</a> here</p>
             </div>

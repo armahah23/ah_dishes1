@@ -100,7 +100,7 @@
 
 .cart {
     position: fixed;
-    top: 110px;
+    top: 0px;
     right: -100%;
     width: 400px;
     height: 100vh;
@@ -166,6 +166,12 @@
     font-weight: 500;
 }
 
+.cart-amt {
+    position: absolute;
+    right: 0;
+    text-align: right;
+}
+
 .cart-quantity {
     border: 1px solid rgba(0,0,0,0.2);
     outline: none;
@@ -178,6 +184,8 @@
     font-size: 24px;
     color: red;
     cursor: pointer;
+    position: absolute;
+    right: 10px;
 }
 
 .cart-total {

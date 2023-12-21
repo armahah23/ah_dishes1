@@ -36,7 +36,7 @@
             <p> Come for the food, stay for the memories – AH Dishes,
                 where every meal is a celebration of family and flavor.</p>
             <div class="reg">
-                <button type="button"><span></span>Visit Inside</button>
+                <button type="button"><span></span><a href="visit.html"> Inside</a></button>
             </div>
         </div>
     </div>

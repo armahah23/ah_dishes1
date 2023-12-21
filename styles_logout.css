@@ -1,0 +1,60 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image:  linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(bckgrnd.jpeg);
+  }
+  
+  .container {
+    max-width: 100%;
+    margin: 50px auto;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+  
+  h1 {
+    color: #ffffff;
+  }
+  
+  p {
+    color: #ffffff;
+  }
+  
+  .home-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .photo-slider {
+    overflow: hidden;
+    white-space: nowrap;
+    margin-top: 20px;
+  }
+  
+  .photo-slider img {
+    width: 300px;
+    height: 200px;
+    margin-right: 10px;
+    display: inline-block;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+.logo-rest {
+    margin-top: 20px;
+  }
+  
+  .logo-rest img {
+    width: 150px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Optional: Add a border-radius for a circular shape */
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle box shadow */
+  }
+  
