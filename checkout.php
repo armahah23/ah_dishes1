@@ -20,6 +20,7 @@ $rs = mysqli_query($con, $sql);
 
 if ($rs) {
     echo "Contact Records Inserted";
+    echo "alert('Your order has been placed successfully!')";
     header("Location: home.php");
 } else {
     echo "Error: " . mysqli_error($con);

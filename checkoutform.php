@@ -87,5 +87,42 @@
 
     </div>
   </div> 
-  <!-- Cehck out -->
+  <!-- validation of form-->
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var checkoutForm = document.querySelector('form');
+
+    checkoutForm.addEventListener('submit', function (event) {
+      if (!validateForm()) {
+        event.preventDefault(); // Prevent form submission
+      }
+    });
+
+    function validateForm() {
+      var isValid = true;
+
+      // Get form fields
+      var fullName = document.getElementById('fname').value;
+      var email = document.getElementById('email').value;
+      var address = document.getElementById('adr').value;
+      var city = document.getElementById('city').value;
+      var cardName = document.getElementById('cname').value;
+      var cardNumber = document.getElementById('ccnum').value;
+      var expMonth = document.getElementById('expmonth').value;
+      var expYear = document.getElementById('expyear').value;
+      var cvv = document.getElementById('cvv').value;
+
+      // Check if any of the required fields are empty
+      if (!fullName || !email || !address || !city || !cardName || !cardNumber || !expMonth || !expYear || !cvv) {
+        isValid = false;
+        alert('Please fill in all required fields.');
+      }
+
+      // Additional validation logic can be added here
+
+      return isValid;
+    }
+  });
+</script>
+
 </body>
