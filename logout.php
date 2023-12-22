@@ -11,7 +11,7 @@ $_COOKIE['userSigned'] = "";
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles_logout.css">
-  <title>Thank You | Your Restaurant Name</title>
+  <title>Thank You | AH-Dishes</title>
 </head>
 <body>
   <div class="container">
