@@ -20,8 +20,10 @@ $rs = mysqli_query($con, $sql);
 
 if ($rs) {
     echo "Contact Records Inserted";
-    echo "alert('Your order has been placed successfully!')";
-    header("Location: home.php");
+    echo "<script>
+    alert('You order hasbeen placed sucessfully, Thank you for Choosing AH-Dishes!');
+    window.location.href = 'home.php';
+    </script>";
 } else {
     echo "Error: " . mysqli_error($con);
 }
